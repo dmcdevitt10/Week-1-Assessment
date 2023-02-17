@@ -50,10 +50,20 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+let totalAcres = 0
 
+for(i = 0; i < fujiAcres.length; i++){
+    totalAcres += fujiAcres[i]
+}
+for(i = 0; i < galaAcres.length; i++){
+    totalAcres += galaAcres[i]
+}
+for(i = 0; i < pinkAcres.length; i++){
+    totalAcres += pinkAcres[i]
+}
+console.log(totalAcres)
 
-
-
+// I used three seperate for loops. Each one going though a different array and taking each number and adding it to the value of totalAcres.
 
 // PROBLEM 2
 
@@ -68,7 +78,8 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-
+let averageDailyAcres = totalAcres / 21
+console.log(averageDailyAcres)
 
 
 
